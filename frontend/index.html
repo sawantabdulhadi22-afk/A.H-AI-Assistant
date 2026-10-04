@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.H AI Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">A.H</div>
+          <div>
+            <p class="brand-name">A.H AI</p>
+            <p class="brand-sub">Assistant</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Dashboard</button>
+          <button class="nav-item">Messages</button>
+          <button class="nav-item">Tasks</button>
+          <button class="nav-item">Automation</button>
+          <button class="nav-item">Integrations</button>
+        </nav>
+
+        <div class="status-panel">
+          <span class="status-dot"></span>
+          <span>System Online</span>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">AI assistant</p>
+            <h1>A.H AI Assistant</h1>
+          </div>
+          <button class="primary-btn" id="voiceBtn">Voice Input</button>
+        </header>
+
+        <section class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal intelligence</p>
+            <h2>Think smarter. Work faster. Live better.</h2>
+            <p>
+              A.H helps with messaging, automations, reminders, research,
+              task coordination, and AI-powered daily assistance.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" id="askBtn">Ask A.H</button>
+              <button class="secondary-btn">View Features</button>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="mini-panel">
+              <span class="panel-label">Status</span>
+              <strong>Ready</strong>
+            </div>
+            <div class="mini-panel">
+              <span class="panel-label">Tasks</span>
+              <strong>12 Active</strong>
+            </div>
+            <div class="mini-panel">
+              <span class="panel-label">Flow</span>
+              <strong>Automation On</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="chat-card">
+          <div class="chat-header">
+            <span class="chat-title">Conversation</span>
+            <span class="chat-badge">Live</span>
+          </div>
+
+          <div class="chat-box" id="chatBox">
+            <div class="message bot">
+              Hello, I am A.H AI Assistant. Ask me to send a message, summarize a task,
+              automate a workflow, or help with research.
+            </div>
+          </div>
+
+          <div class="composer">
+            <textarea id="promptInput" rows="3" placeholder="Ask A.H AI to help with anything..."></textarea>
+            <button class="primary-btn" id="sendBtn">Send</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
